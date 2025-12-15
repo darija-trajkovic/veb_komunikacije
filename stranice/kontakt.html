@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../slike/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../style.css">
+        <title>LR pocetna stranica</title>
+    </head>
+    <body>
+       <div class="header">
+       <div class="logo">
+        <img src="../slike/logo.webp" alt="Labradori retriveri">
+        </div>
+        </div>
+        <nav>
+            <ul class="navbar">
+            <li id="prvi_link"><a href="../index.html">Početna</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        </nav> 
+        <hr>
+        <h2 id="naslov">Ostavite nam vas utisak </h2>
+        <div class="form">
+        <form action="posalji_formu" method="post">
+            <p><b>Ime :</b></p>
+            <input type="text">
+            <p><b>Prezime :</b></p>
+            <input type="text">
+            <p>Da li vam se svideo sajt :</p>
+            <p><input type="radio" value="da" name="sajt">Svideo mi se
+            <input type="radio" value="ne" name="sajt">Nije mi se svideo
+            <input type="radio" value="moze_bolje" name="sajt">Moze to i bolje</p>
+            <br>
+            <p><b>Obelezite omiljene rase pasa :</b</p>
+            <p><input type="checkbox" value="Labrador">Labrador</p>
+            <p><input type="checkbox" value="PitBull">PitBull</p>
+            <p><input type="checkbox" value="Doga">Doga</p>
+            <p><input type="checkbox" value="NLT">Nemacki lovni terijer</p>
+            <p>Kako ste saznali za nas ? </p>
+            <select name="kako_ste_saznali">
+                <option value="internet">Preko interneta</option>
+                <option value="poznanik">Preko poznanika</option>
+                <option value="oglas">Putem oglasa</option>
+                <option value="drugoi">Drugi nacin</option>
+            </select>
+            <p>Dodatni komentar:</p>
+            <textarea id="komentar" name="komentar" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Posalji">
+            <input type="reset"  value="Obrisi">
+        </form>
+        </div>
+    </body>
+</html>
